@@ -12,7 +12,7 @@ export default function SignupPage() {
     const email = formData.get('email')
     const password = formData.get('password')
  
-    const response = await fetch(`${baseUrl}/api/auth/signup`, {
+    const response = await fetch(`${baseUrl}/admin/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
